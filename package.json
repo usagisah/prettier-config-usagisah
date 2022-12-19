@@ -1,6 +1,6 @@
 {
   "name": "prettier-config-usagisah",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "个人prettier的设定集，同时也是eslint-plugin-prettier的底层配置依赖",
   "keywords": [
     "prettier",
