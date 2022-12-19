@@ -8,9 +8,14 @@ module.exports = {
   jsxSingleQuote: false,
   trailingComma: "none",
   bracketSpacing: true,
-  jsxBracketSameLine: false,
+  bracketSameLine: false,
   arrowParens: "avoid",
   vueIndentScriptAndStyle: false,
   endOfLine: "lf",
-  plugins: [require("prettier-plugin-packagejson")],
-};
+  singleAttributePerLine: false,
+  plugins: [
+    require("prettier-plugin-packagejson"),
+    require("prettier-plugin-organize-imports"),
+    require("prettier-plugin-tailwindcss")
+  ]
+}
