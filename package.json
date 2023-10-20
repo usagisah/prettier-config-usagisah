@@ -1,14 +1,15 @@
 {
   "name": "prettier-config-usagisah",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "个人prettier的设定集，同时也是eslint-plugin-prettier的底层配置依赖",
+  "type": "module",
   "keywords": [
     "prettier",
     "prettier-config",
     "prettier-config-usagisah",
     "prettier usagisah",
     "usagisah",
-    "gxs114",
+    "顾弦笙",
     "format"
   ],
   "homepage": "https://github.com/gxs114/prettier-config-usagisah#readme",
@@ -20,20 +21,31 @@
     "url": "git+https://github.com/gxs114/prettier-config-usagisah.git"
   },
   "license": "MIT",
-  "author": "gxs114",
-  "main": "prettier-config-usagisah.js",
+  "author": "顾弦笙/usagisah",
   "files": [
-    "prettier-config-usagisah.js"
+    "dist"
   ],
+  "types": "./dist/prettier-config-usagisah.d.ts",
+  "main": "./dist/prettier-config-usagisah.js",
+  "module": "./dist/prettier-config-usagisah.js",
+  "exports": {
+    ".": {
+      "types": "./dist/prettier-config-usagisah.d.ts",
+      "default": "./dist/prettier-config-usagisah.js"
+    }
+  },
   "scripts": {
+    "dev": "tsc -w",
     "format": "prettier --cache -w ./**/*.{js,md,json}"
   },
   "dependencies": {
-    "@volar/vue-typescript": "^1.0.14",
-    "prettier": "^2.8.1",
-    "prettier-plugin-organize-imports": "^3.2.1",
-    "prettier-plugin-packagejson": "^2.2.17",
-    "prettier-plugin-tailwindcss": "^0.2.1",
+    "prettier": "^3.0.3",
+    "prettier-plugin-organize-imports": "^3.2.3",
+    "prettier-plugin-packagejson": "^2.4.6",
+    "prettier-plugin-tailwindcss": "^0.5.6",
     "typescript": "^4.9.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.7"
   }
 }

@@ -19,6 +19,6 @@ npm i prettier-config-usagisah
 ```js
 //.prettierrc.js
 module.exports = {
-  ...require("prettier-config-usagisah")
-}
+  ...require("prettier-config-usagisah"),
+};
 ```
